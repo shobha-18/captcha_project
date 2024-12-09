@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Example</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }} <!-- This renders the form with CAPTCHA -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+explain me all this data properly why we need to use 
